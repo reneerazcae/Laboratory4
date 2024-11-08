@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Reservations</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/admin-reservations.css">
+
+</head>
+<body>
+<h1>Welcome Admin</h1>
+  <nav>
+    <a href="/admin/buses">Manage Buses</a> |
+    <a href="/admin/routes">Manage Routes</a> |
+    <a href="/admin/reservations">Manage Reservations</a> |
+    <a href="/admin/payments">Manage Payments</a>
+  </nav>
+
+<!--<section>-->
+  <h2>Manage Reservations</h2>
+
+  <form action="/admin/reservations" method="POST">
+    <h3>Add New Reservation</h3>
+    <label for="reservationId">Reservation ID:</label>
+    <input type="text" name="reservationId" id="reservationId" required>
+    <br>
+    <label for="customerId">Customer ID:</label>
+    <input type="text" name="customerId" id="customerId" required>
+    <br>
+    <label for="busId">Bus ID:</label>
+    <input type="text" name="busId" id="busId" required>
+    <br>
+    <label for="route">Route:</label>
+    <input type="text" name="route" id="route" required>
+    <br>
+    <button type="submit">Add Reservation</button>
+  </form>
+
+  <h3>Existing Reservations</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>Reservation ID</th>
+      <th>Customer ID</th>
+      <th>Bus ID</th>
+      <th>Route</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Example reservation list -->
+    <tr>
+      <td>RES123</td>
+      <td>CUST456</td>
+      <td>BUS789</td>
+      <td>Route A</td>
+      <td>
+        <a href="/admin/reservations/edit/RES123">Edit</a> |
+        <a href="/admin/reservations/delete/RES123">Delete</a>
+      </td>
+    </tr>
+    <!-- Add more rows dynamically from your server -->
+    </tbody>
+  </table>
+<!--</section>-->
+
+</body>
+</html>

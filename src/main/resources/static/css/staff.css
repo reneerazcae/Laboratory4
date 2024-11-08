@@ -1,0 +1,28 @@
+/* Staff-specific styles */
+.staff-dashboard {
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.staff-dashboard h1 {
+    color: #1976d2; /* Dark blue */
+}
+
+.staff-dashboard nav a {
+    background-color: #1976d2; /* Blue background */
+}
+
+.staff-dashboard nav a:hover {
+    background-color: #1565c0; /* Darker blue */
+}
+
+.staff-dashboard .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.staff-dashboard .tasks {
+    background-color: #bbdefb; /* Light blue background */
+    padding: 15px;
+    border-radius: 5px;
+}

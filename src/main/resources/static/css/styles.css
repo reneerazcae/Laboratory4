@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Light gray background for soft contrast */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #6a1b9a; /* Purple color for headings */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Large font for major headings */
+}
+
+h2 {
+    font-size: 1.8rem; /* Slightly smaller font for section headings */
+}
+
+/* Header Style */
+header {
+    background-color: #6a1b9a; /* Purple background for header */
+    color: white;
+    padding: 30px 40px; /* More padding to add spacing */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navigation Style */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #8e24aa; /* Slightly lighter purple for the navbar */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow under navbar */
+}
+
+nav a {
+    margin: 0 25px; /* More space between links */
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #8e24aa; /* Purple color for links */
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #7b1fa2; /* Darker purple for hover */
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+nav a.active {
+    background-color: #7b1fa2;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Bus Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/admin-buses.css">
+
+
+</head>
+<body>
+<h1>Welcome Admin</h1>
+<nav>
+    <a href="/admin/buses">Manage Buses</a> |
+    <a href="/admin/routes">Manage Routes</a> |
+    <a href="/admin/reservations">Manage Reservations</a> |
+    <a href="/admin/payments">Manage Payments</a>
+</nav>
+<h2>Manage Buses</h2>
+<!-- List of buses with options to add, update, or delete -->
+<!-- You can use Thymeleaf to dynamically display bus data here -->
+<table>
+    <tr>
+        <th>Bus Name</th>
+        <th>Capacity</th>
+        <th>Actions</th>
+    </tr>
+    <tr>
+        <td>Bus 1</td>
+        <td>50</td>
+        <td>
+            <a href="#">Edit</a> | <a href="#">Delete</a>
+        </td>
+    </tr>
+</table>
+<br>
+<a href="#">Add New Bus</a>
+</body>
+</html>
